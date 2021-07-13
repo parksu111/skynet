@@ -72,5 +72,10 @@ Copy the command and run it in your conda environment.
 
 ![alt text](https://github.com/parksu92/sleep-state-classification/blob/main/images/2b.png)
 
+![alt text](https://github.com/parksu92/sleep-state-classification/blob/main/images/2d.png)
+
 You have now successfully installed PyTorch!
 
+
+
+### 3.
