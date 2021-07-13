@@ -91,11 +91,18 @@ Download these 3 files and place them in the same folder as *sleepy.py*. Typical
 
 ### 4. Running Skynet
 
-To run skynet, you must first create 2 folders. The first folder will contain the recrodings you want to classify and the second folder will contain the output of Skynet. For simplicity, in the example below, I named the two folders *infile* and *outfile* and placed them both in the *Desktop*.
+To run **Skynet**, you must first create 2 folders. The first folder will contain the recrodings you want to classify and the second folder will contain the output of Skynet. For simplicity, in the example below, I named the two folders *infile* and *outfile* and placed them both in the *Desktop*.
 
 --
 
 Place the recordings you wish to classify into the *infile* folder.
 
-Next, open the *skynetv1_1.py* script using a text editor or IDE like *Sublime Text* or *Spyder*. On lines 18 and 19, change the paths to match the *infile* and *outfile* folders you created.
+Next, open the *skynetv1_1.py* script using a text editor or IDE like *Sublime Text* or *Spyder*. On lines 18 and 19, change the paths to match the *infile* and *outfile* folders you created. Don't forget to save the script.
+
+Now, open the anaconda prompt and activate the environment you created in **part 1**.
+The following command will run **Skynet**:
+```
+python skynetv1_1.py
+```
+**Skynet** is now running. It will begin by making images of each 2.5 s bin of EEG data and then proceed to classify 
 
