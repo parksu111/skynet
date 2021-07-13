@@ -5,7 +5,7 @@ This document contains step-by-step instructions for using **Skynet**, the autom
 ### Table of Contents
 1. Preparing the conda environment
 2. Installing PyTorch
-3. Downloading the necesary scripts
+3. Downloading the necesary files
 4. Running Skynet
 5. Upgraded annotation interface
 
@@ -78,4 +78,6 @@ You have now successfully installed PyTorch!
 
 
 
-### 3.
+### 3. Downloading the necessary files
+
+
