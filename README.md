@@ -127,6 +127,8 @@ Place these two files in the corresponding recording folder.
 
 Congratulations! You have now succesfully used the **Skynet** system. 
 
+**Skynet** will also automatically delete all the images it made. (It moves the files to trash bin. It does NOT empty the trash bin).
+
 Unfortunately, **Skynet** is not yet perfect and requires a small bit of manual annotation afterwards. Below, I will go over the new functions of the [upgraded annotation interface](#upgraded-annotation-interface) and some of the [current issues with Skynet](#current-issues-with-skynet).
 
 
@@ -152,7 +154,7 @@ Besides these changes, everything is the same as the older *sleep_annotation_qt.
 
 ## Current issues with Skynet
 
-As of 07/15/2021, Skynet achieves an overall accuracy of around 94%.
+As of 07/14/2021, Skynet achieves an overall accuracy of around 94%.
 
 When examining the results, there are 2 common problems (that I noticed. There could be more):
 * Often, the REM periods end with NREM before going into Wake. These are caught by the system and are displayed in black in the 'prob' hypnogram of *saqt.py*
