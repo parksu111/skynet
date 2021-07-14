@@ -6,7 +6,7 @@ This document contains step-by-step instructions for using **Skynet**, the autom
 1. Preparing the conda environment
 2. Installing PyTorch
 3. Downloading the necesary files
-4. Running Skynet
+4. Running **Skynet**
 5. Upgraded annotation interface
 6. Current issues with **Skynet**
 
@@ -20,7 +20,7 @@ First, open the Anaconda Prompt.
 
 ![alt text](https://github.com/parksu92/sleep-state-classification/blob/main/images/prompt.png)
 
-The following code will create a new conda environment titled 'skynet38' using python 3.8:
+The following command will create a new conda environment titled 'skynet38' using python 3.8:
 ```
 conda create -n skynet38 python=3.8
 ```
@@ -58,7 +58,7 @@ Here is a list of the packages you need to install using 'conda install':
 * h5py
 * seaborn
 
-Your conda environment is now ready! All that is left to use **Skynet** is to install PyTorch, an open source machine learning library.
+Your conda environment is now ready! Now it is time to install PyTorch, an open source machine learning library.
 
 
 ### 2. Installing PyTorch
