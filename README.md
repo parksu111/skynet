@@ -86,7 +86,7 @@ There are 3 files that need to be downloaded:
 * skynetv1_1.py - The script for the **Skynet** system
 * saqt.py - Updated version of the sleep annotation interface
 
-These files can be found on the Penn Box repository [here](https://upenn.box.com/s/qps4kajyvd8p75k12f0i0bunw5sdmr78). All the files besides *skynet_v1_1.pkl* can also be downloaded off this very github repository. 
+These files can be found in the Penn Box repository [here](https://upenn.box.com/s/qps4kajyvd8p75k12f0i0bunw5sdmr78). All the files besides *skynet_v1_1.pkl* can also be downloaded off this very github repository. 
 
 Download these 3 files and place them in the same folder as *sleepy.py*. Typically, this folder is the *PySleep* folder.
 
