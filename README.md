@@ -95,7 +95,7 @@ Download these 3 files and place them in the same folder as *sleepy.py*. Typical
 
 ### 4. Running Skynet
 
-To run **Skynet**, you must first create 2 folders. The first folder will contain the recrodings you want to classify and the second folder will contain the output of Skynet. For simplicity, in the example below, I named the two folders *infile* and *outfile* and placed them both in the *Desktop*.
+To run **Skynet**, you must first create 2 folders. The first folder will contain the recrodings you want to classify and the second folder will contain the output of **Skynet**. For simplicity, in the example below, I named the two folders *infile* and *outfile* and placed them both in the *Desktop*.
 
 ![alt text](https://github.com/parksu92/sleep-state-classification/blob/main/images/4a.png)
 
