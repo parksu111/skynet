@@ -3,7 +3,7 @@ This document contains step-by-step instructions for using **Skynet**, the autom
 
 
 ### Table of Contents
-1. Preparing the conda environment
+1. [Preparing the conda environment](#preparing-the-conda-environment)
 2. Installing PyTorch
 3. Downloading the necesary files
 4. Running **Skynet**
