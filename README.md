@@ -4,9 +4,14 @@ This document contains step-by-step instructions for using **Skynet**, the autom
 
 ## Table of Contents
 - [Preparing the conda environment](#preparing-the-conda-environment)
+- [Installing PyTorch](#installing-pytorch)
+- [Downloading the necessary files](#downloading-the-necessary-files)
+- [Running **Skynet**](#running-skynet)
+- [Upgraded annotation interface](#upgraded-annotation-interface)
+- [Current issues with **Skynet**](#current-issues-with-skynet)
 
 
-### Preparing the conda environment
+## Preparing the conda environment
 If you have been using functions in *sleepy.py*, you probably already have a conda environment ready for use. If you do, you can skip this part and move on to **2. Installing PyTorch**.
 
 If you don't have a conda environment or want to make a new conda environment just for **Skynet**, you can follow the steps here:
@@ -56,7 +61,7 @@ Here is a list of the packages you need to install using 'conda install':
 Your conda environment is now ready! Now it is time to install PyTorch, an open source machine learning library.
 
 
-### 2. Installing PyTorch
+## Installing PyTorch
 
 First, activate the conda environment that has all the necessary packages installed. Then, go to the 'Get Started' page on the PyTorch website using [this link](https://pytorch.org/get-started/locally/).
 
@@ -74,7 +79,7 @@ You have now successfully installed PyTorch!
 
 
 
-### 3. Downloading the necessary files
+## Downloading the necessary files
 
 There are 3 files that need to be downloaded:
 * skynetv1_1.pkl - A pickle file containing the trained neural network weights and biases
@@ -88,7 +93,7 @@ Download these 3 files and place them in the same folder as *sleepy.py*. Typical
 ![alt text](https://github.com/parksu92/sleep-state-classification/blob/main/images/3a.png)
 
 
-### 4. Running Skynet
+## Running Skynet
 
 To run **Skynet**, you must first create 2 folders. The first folder will contain the recrodings you want to classify and the second folder will contain the output of **Skynet**. For simplicity, in the example below, I named the two folders *infile* and *outfile* and placed them both in the *Desktop*.
 
@@ -125,7 +130,7 @@ Congratulations! You have now succesfully used the **Skynet** system.
 Unfortunately, **Skynet** is not yet perfect and requires a small bit of manual annotation afterwards. I will go over the new functions in the updated annotation interface in **part 5** and the current issues with **Skynet** in **part 6**.
 
 
-### 5. Upgraded annotation interface
+## Upgraded annotation interface
 
 Below is a screenshot of the new sleep annotation interface. You can run it the same way you run the old interface but the script has a new name:
 ```
@@ -145,7 +150,7 @@ Some of you are already using a version of the annotation interface that has mor
 Besides these changes, everything is the same as the older *sleep_annotation_qt.py* interface.
 
 
-### 6. Current issues with Skynet
+## Current issues with Skynet
 
 As of 07/15/2021, Skynet achieves an overall accuracy of around 94%.
 
