@@ -15,7 +15,7 @@ import time
 import warnings
 
 #Paths
-ppath = r'/home/spark/Desktop/recordings'
+ppath = r'/home/spark/Desktop/infile'
 outpath = r'/home/spark/Desktop/outfile'
 
 
@@ -254,6 +254,7 @@ for rec in recordings:
 	print('Images have been deleted.')
 	print(' ')
 
+shutil.rmtree(os.path.join(ppath, 'spectogram'))
 print('All recordings have been classified.')
 print(' ')
 print('Thank you for using SKYNET')
