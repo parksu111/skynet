@@ -2,13 +2,8 @@
 This document contains step-by-step instructions for using **Skynet**, the automatic sleep-state classification system made for Chung-Weber Lab.
 
 
-### Table of Contents
-1. [Preparing the conda environment](#preparing-the-conda-environment)
-2. Installing PyTorch
-3. Downloading the necesary files
-4. Running **Skynet**
-5. Upgraded annotation interface
-6. Current issues with **Skynet**
+## Table of Contents
+- [Preparing the conda environment](#preparing-the-conda-environment)
 
 
 ### 1. #Preparing the conda environment
