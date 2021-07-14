@@ -6,7 +6,7 @@ This document contains step-by-step instructions for using **Skynet**, the autom
 - [Preparing the conda environment](#preparing-the-conda-environment)
 
 
-### 1. #Preparing the conda environment
+### Preparing the conda environment
 If you have been using functions in *sleepy.py*, you probably already have a conda environment ready for use. If you do, you can skip this part and move on to **2. Installing PyTorch**.
 
 If you don't have a conda environment or want to make a new conda environment just for **Skynet**, you can follow the steps here:
