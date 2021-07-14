@@ -8,12 +8,13 @@ This document contains step-by-step instructions for using **Skynet**, the autom
 3. Downloading the necesary files
 4. Running Skynet
 5. Upgraded annotation interface
+6. Current issues with **Skynet**
 
 
 ### 1. Preparing the conda environment
 If you have been using functions in *sleepy.py*, you probably already have a conda environment ready for use. If you do, you can skip this part and move on to **2. Installing PyTorch**.
 
-If you don't have a conda environment or want to make a new conda environment just for Skynet, you can follow the steps here:
+If you don't have a conda environment or want to make a new conda environment just for **Skynet**, you can follow the steps here:
 
 First, open the Anaconda Prompt.
 
@@ -23,13 +24,13 @@ The following code will create a new conda environment titled 'skynet38' using p
 ```
 conda create -n skynet38 python=3.8
 ```
-You can use a different name for the environment and a different version of python. However, I recommend using python 3.8 as Skynet was made using python 3.8.
+You can use a different name for the environment and a different version of python. However, I recommend using python 3.8 as **Skynet** was made using python 3.8.
 
 Once you enter the code to create a new environment, you will be asked if you would like to install several basic packages. Type 'y' and press 'Enter'.
 
 ![alt text](https://github.com/parksu92/sleep-state-classification/blob/main/images/1b.png)
 
-Once the new environment is created, you can activate that environment with the following code:
+Once the new environment is created, you can activate that environment with the following command:
 ```
 conda activate skynet38
 ```
@@ -112,5 +113,13 @@ The following command will run **Skynet**:
 ```
 python skynet_v1_1.py
 ```
-**Skynet** is now running. It will begin by making images of each 2.5 s bin of EEG data and then proceed to classify 
+![alt text](https://github.com/parksu92/sleep-state-classification/blob/main/images/4d.png)
+
+**Skynet** is now running. It will begin by making images of each 2.5 s bin of EEG data and then proceed to classify the images. Once it is done classifying, it will output 2 files in the *outfile* folder for each recording:
+* *remidx_*
+* *remprob_*
+
+![alt text](https://github.com/parksu92/sleep-state-classification/blob/main/images/4e.png)
+
+Place these two files in the corresponding recording folder. Congratulations! You have now succesfully used the **Skynet** system. Unfortunately, **Skynet** is not yet perfect and requires a small bit of manual annotation afterwards. I will go over the new functions in the updated annotation interface in **part 5** and the current issues with **Skynet** in **part 6**.
 
