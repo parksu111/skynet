@@ -127,7 +127,7 @@ Place these two files in the corresponding recording folder.
 
 Congratulations! You have now succesfully used the **Skynet** system. 
 
-Unfortunately, **Skynet** is not yet perfect and requires a small bit of manual annotation afterwards. I will go over the new functions in the updated annotation interface in **part 5** and the current issues with **Skynet** in **part 6**.
+Unfortunately, **Skynet** is not yet perfect and requires a small bit of manual annotation afterwards. Below, I will go over the new functions of the [upgraded annotation interface](#upgraded-annotation-interface) and some of the [current issues with Skynet](#current-issues-with-skynet).
 
 
 ## Upgraded annotation interface
