@@ -160,7 +160,7 @@ When examining the results, there are 2 common problems (that I noticed. There c
 
 Please report any issues you notice to me via Slack or email (parksu@alumni.upenn.edu).
 
-I will continue to upgrad Skynet to try and increase the accuracy.
+I will continue to upgrade Skynet to try and increase the accuracy.
 
 Thank you!
 
