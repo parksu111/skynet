@@ -121,5 +121,46 @@ python skynet_v1_1.py
 
 ![alt text](https://github.com/parksu92/sleep-state-classification/blob/main/images/4e.png)
 
-Place these two files in the corresponding recording folder. Congratulations! You have now succesfully used the **Skynet** system. Unfortunately, **Skynet** is not yet perfect and requires a small bit of manual annotation afterwards. I will go over the new functions in the updated annotation interface in **part 5** and the current issues with **Skynet** in **part 6**.
+Place these two files in the corresponding recording folder. 
+
+![alt text](https://github.com/parksu92/sleep-state-classification/blob/main/images/4f.png)
+
+Congratulations! You have now succesfully used the **Skynet** system. 
+
+Unfortunately, **Skynet** is not yet perfect and requires a small bit of manual annotation afterwards. I will go over the new functions in the updated annotation interface in **part 5** and the current issues with **Skynet** in **part 6**.
+
+
+### 5. Upgraded annotation interface
+
+Below is a screenshot of the new sleep annotation interface. You can run it the same way you run the old interface but the script has a new name:
+```
+python saqt.py
+```
+
+![alt text](https://github.com/parksu92/sleep-state-classification/blob/main/images/5a.png)
+
+As you can see, there is a new color-coded hypnogram labelled 'Prob' above the original Brainstate hypnogram. The portions in red correspond to the 8% of bins for which **Skynet** is most unsure of the state. The portions in black correspond to bins in which there are improper state transitions (e.g. Wake --> REM or REM --> NREM). When using **Skynet**, it is advised to go through the black portions and manually annotate those bins.
+
+Some of you are already using a version of the annotation interface that has more colors for different states. This version of the annotation interface also contains those extra states:
+* Key = 't'; Dark Blue; '6' in *remidx_*
+* Key = 'b'; Yellow; '7' in *remidx_*
+* Key = 'c'; Light green; '4' in *remidx_*
+* Key = 'v'; Red; '5' in *remidx_*
+
+Besides these changes, everything is the same as the older *sleep_annotation_qt.py* interface.
+
+
+### 6. Current issues with Skynet
+
+As of 07/15/2021, Skynet achieves an overall accuracy of around 94%.
+
+When examining the results, there are 2 common problems (that I noticed. There could be more):
+* Often, the REM periods end with NREM before going into Wake. These are caught by the system and are displayed in black in the 'prob' hypnogram of *saqt.py*
+* There are short blocks (1 or 2 bins) of NREM in the middle of long Wake blocks. When looking just at the EEG and EMG, these bins look like NREM. However, we usually annotate it as Wake. These are not caught by the system yet.
+
+Please report any issues you notice to me via Slack or email (parksu@alumni.upenn.edu).
+
+I will continue to upgrad Skynet to try and increase the accuracy.
+
+Thank you!
 
