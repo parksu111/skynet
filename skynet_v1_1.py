@@ -1,5 +1,4 @@
 from __future__ import print_function, division
-
 import torch
 import os
 import torch.nn as nn
@@ -14,7 +13,8 @@ import shutil
 import time
 import warnings
 
-#Paths
+#Paths: When using Windows, please use 2 backslashes to separate folders
+#ex) 'C:\\Users\\Desktop\\infile'
 ppath = r'/home/spark/Desktop/infile'
 outpath = r'/home/spark/Desktop/outfile'
 
@@ -198,7 +198,7 @@ for rec in recordings:
 		outlist.remove(max(outlist))
 		sec_largest = max(outlist)
 		score_diffs.append(largest - sec_largest)
-		ind = int((n1[0][0].split('/')[-1]).split('.')[0])
+		ind = int((n1[0][0].split('\\')[-1]).split('.')[0])
 		Mnew[ind] = pred
 		inds.append(ind)
 	#Convert prediction integers to states
