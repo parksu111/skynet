@@ -55,7 +55,6 @@ Here is a list of the packages you need to install using 'conda install':
 * scipy
 * h5py
 * matplotlib
-* h5py
 * seaborn
 
 Your conda environment is now ready! Now it is time to install PyTorch, an open source machine learning library.
