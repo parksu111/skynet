@@ -48,7 +48,7 @@ While it is recommended to install using the 'conda install' command, some packa
 
 Here is a list of the packages you need to install using 'pip install':
 * pyqt5
-* sklearn
+* sklearn 
 
 Here is a list of the packages you need to install using 'conda install':
 * pyqtgraph
