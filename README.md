@@ -118,7 +118,7 @@ python skynet_v1_1.py
 
 **Skynet** is now running. It will begin by making images of each 2.5 s bin of EEG data and then proceed to classify the images. Once it is done classifying, it will output 2 files in the *outfile* folder for each recording:
 * *remidx_*
-* *remprob_*
+* *remprob_* 
 
 ![alt text](https://github.com/parksu92/sleep-state-classification/blob/main/images/4e.png)
 
