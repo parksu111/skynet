@@ -166,13 +166,13 @@ for rec in recordings:
 
 			plt.close('all')
 
-		if idx == int(len(M)/25):
+		if idx == int(len(M)/4):
 			print('25%')
-		if idx == int(len(M)/25)*2:
+		if idx == int(len(M)/4)*2:
 			print('50%')
-		if idx == int(len(M)/25)*3:
+		if idx == int(len(M)/4)*3:
 			print('75%')                             
-
+	print('100%')
 	print('Images have been made.')
 	time.sleep(3)
 	print('Now classifying the images...')
