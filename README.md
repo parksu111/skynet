@@ -107,7 +107,6 @@ Next, open the *skynetv1_1.py* script using a text editor or IDE like *Sublime T
 
 **Note**: When using windows, please use 2 backslashes to indicate a new folder!
 
-![alt text](https://github.com/parksu92/sleep-state-classification/blob/main/images/4c.png)
 
 Now, open the anaconda prompt and activate the environment you created in **part 1**.
 The following command will run **Skynet**:
