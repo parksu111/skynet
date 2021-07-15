@@ -105,7 +105,7 @@ Place the recordings you wish to classify into the *infile* folder.
 
 Next, open the *skynetv1_1.py* script using a text editor or IDE like *Sublime Text* or *Spyder*. On lines 18 and 19, change the paths to match the *infile* and *outfile* folders you created. Don't forget to save the script.
 
-**Note**: When using windows, please use 2 backslashes to indicate a new folder! ex) 'C:\\Users\\Skynet\\Desktop\\infile'
+**Note**: When using windows, please use 2 backslashes to indicate a new folder! ex) 'C: \\ Users \\ Skynet \\ Desktop \\ infile'
 
 ![alt text](https://github.com/parksu92/sleep-state-classification/blob/main/images/4c.png)
 
