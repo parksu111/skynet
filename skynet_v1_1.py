@@ -99,6 +99,7 @@ net = twoChannelNet()
 net.load_state_dict(torch.load('skynet_v1_1.pkl', map_location=device))
 net.eval()
 
+plt.ioff()
 
 recordings = os.listdir(ppath)
 
@@ -119,6 +120,9 @@ for rec in recordings:
 	emgpicpath = os.path.join(emgpath, 'noclass')
 	os.mkdir(eeg1picpath)
 	os.mkdir(emgpicpath)
+	if not(os.path.isfile(os.path.join(ppath, rec, 'remidx_' + rec + '.txt'))):
+		# predict brain state
+		M,S = sp.sleep_state(ppath, rec, pwrite=1, pplot=0)
 	M,S = sp.load_stateidx(ppath, rec)
 	EEG1 = np.squeeze(so.loadmat(os.path.join(ppath, rec, 'EEG.mat'))['EEG']).astype('float')
 	EMG = np.squeeze(so.loadmat(os.path.join(ppath, rec, 'EMG.mat'))['EMG']).astype('float')
@@ -198,7 +202,8 @@ for rec in recordings:
 		outlist.remove(max(outlist))
 		sec_largest = max(outlist)
 		score_diffs.append(largest - sec_largest)
-		ind = int((n1[0][0].split('\\')[-1]).split('.')[0])
+		img_path = n1[0][0]
+		ind = int((os.path.split(img_path)[-1]).split('.')[0])
 		Mnew[ind] = pred
 		inds.append(ind)
 	#Convert prediction integers to states
