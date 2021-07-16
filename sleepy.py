@@ -98,7 +98,7 @@ def load_stateidx(ppath, name, ann_name=''):
     if ann_name == '':
         ann_name = name
 
-    sfile = os.path.join(ppath, name, '3_remidx_' + ann_name + '.txt')
+    sfile = os.path.join(ppath, name, 'remidx_' + ann_name + '.txt')
     
     f = open(sfile, 'r')
     lines = f.readlines()
